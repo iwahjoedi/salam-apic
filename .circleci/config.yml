@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/php:7.4.9-browsers
+      - image: circleci/php:7.4.9-cli
  
     working_directory: ~/repo
  
@@ -13,7 +13,7 @@ jobs:
           name: Deploy Master Branch
           command: |
             sudo apt-get update
-            sudo apt-get -qq install git-ftp
+            sudo apt-get -qq install apt-utils git-ftp
             echo "Deploying project ..."
             echo $(git status)
             git ftp init --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
