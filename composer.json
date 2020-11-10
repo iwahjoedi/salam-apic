@@ -15,7 +15,7 @@
         "ext-curl": "*",
         "ext-intl": "*",
         "ext-json": "*",
-        "kint-php/kint": "^2.1",
+        "kint-php/kint": "9999999-dev",
         "psr/log": "^1.1",
         "laminas/laminas-escaper": "^2.6.1",
         "guzzlehttp/guzzle": "^7.2.0",
