@@ -18,7 +18,8 @@ jobs:
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
-            echo $(git status)
+            git-ftp push --init-if-not-exist
+            # echo $(git status)
             # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
  
 workflows:
