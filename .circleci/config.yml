@@ -15,8 +15,11 @@ jobs:
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
             echo "Deploying project ..."
+            git config git-ftp.user "${FTP_USER}"
+            git config git-ftp.password "${FTP_PWD}"
+            git config git-ftp.url "${FTP_LOCATION}"
             echo $(git status)
-            git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
+            # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
  
 workflows:
   version: 2
