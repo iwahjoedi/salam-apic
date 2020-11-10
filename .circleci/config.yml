@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/php:7.2.0-cli
+      - image: circleci/php:buster
  
     working_directory: ~/repo
  
