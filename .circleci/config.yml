@@ -34,14 +34,16 @@ jobs:
 
             git config user.name "iwahjoedi"
             git config user.email "iwahjoedi@gmail.com"
-            mv .gitignore gitignore
-            # echo $(git status)
-            # ls -alF
-            git add --all
-            git commit -m 'build by circleci'
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
+
+            mv .gitignore gitignore
+            # echo $(git status)
+            # ls -alF
+            git add vendor/*
+            
+            git commit -m 'build by circleci'
             git ftp push
             
 
