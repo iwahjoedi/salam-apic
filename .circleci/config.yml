@@ -14,6 +14,8 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
+
+            copy env.prod .env
             # Build the application
             composer install --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
 
