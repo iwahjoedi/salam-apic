@@ -27,7 +27,7 @@ jobs:
             # Build the application
             # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
             # composer update --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader
-            computer update --verbose --no-progress --no-interaction
+            composer install
 
             # Deploy the application
             echo "Deploying project ..."
