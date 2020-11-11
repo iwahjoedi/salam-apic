@@ -25,7 +25,8 @@ jobs:
             echo "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
-            composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            composer update --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader
 
             # Deploy the application
             echo "Deploying project ..."
@@ -34,14 +35,14 @@ jobs:
             git config user.name "iwahjoedi"
             git config user.email "iwahjoedi@gmail.com"
             mv .gitignore gitignore
-            echo $(git status)
-            ls -alF
+            # echo $(git status)
+            # ls -alF
             git add --all
             git commit -m 'build by circleci'
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
-            # git ftp push
+            git ftp push
             
 
             # echo $(git status)
