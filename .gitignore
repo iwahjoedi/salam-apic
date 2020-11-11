@@ -125,8 +125,9 @@ nb-configuration.xml
 /results/
 /phpunit*.xml
 
-/vendor/
-composer.lock
 
+# Codeigniter
+vendor/
+composer.lock
 .git-ftp.log
-system/ThirdParty/*
+system/ThirdParty/Kint/**
