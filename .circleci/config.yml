@@ -14,6 +14,10 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
+            # Build the application
+            composer install --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+
+            # Deploy the application
             echo "Deploying project ..."
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
