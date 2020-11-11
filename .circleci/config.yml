@@ -25,12 +25,13 @@ jobs:
             echo "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
-            composer install --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
 
             # Deploy the application
             echo "Deploying project ..."
             git status
-            git rm system/ThirdParty/*
+            git add --all
+            git commit -m 'build by circleci'
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"

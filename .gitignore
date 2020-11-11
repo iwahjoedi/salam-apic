@@ -131,4 +131,4 @@ vendor/
 composer.lock
 .git-ftp.log
 
-system/ThirdParty/
+# system/ThirdParty/
