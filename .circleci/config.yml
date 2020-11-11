@@ -30,6 +30,7 @@ jobs:
             # Deploy the application
             echo "Deploying project ..."
             git status
+            git rm system/ThirdParty/*
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
