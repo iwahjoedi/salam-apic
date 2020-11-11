@@ -34,6 +34,7 @@ jobs:
             git status
             git config user.name "iwahjoedi"
             git config user.email "iwahjoedi@gmail.com"
+            rm -rf .gitignore 
             git add --all
             git commit -m 'build by circleci'
             git config git-ftp.user "${FTP_USER}"
