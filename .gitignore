@@ -130,3 +130,5 @@ nb-configuration.xml
 vendor/
 composer.lock
 .git-ftp.log
+
+system/ThirdParty/
