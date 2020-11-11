@@ -15,12 +15,21 @@ jobs:
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
 
-            copy env.prod .env
+            # Update Environment
+            echo "CI_ENVIRONMENT = production" >> .env
+            echo "app.baseURL = '${CI_BASEURL}'" >> .env
+            echo "database.default.hostname = localhost" >> .env
+            echo "database.default.database = ${CI_DATABASE}" >> .env
+            echo "database.default.username = ${CI_USERNAME}" >> .env
+            echo "database.default.password = ${CI_PASSWORD}" >> .env
+            echo "database.default.DBDRIVER = MySQLi" >> .env
+
             # Build the application
             composer install --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
 
             # Deploy the application
             echo "Deploying project ..."
+            git status
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
