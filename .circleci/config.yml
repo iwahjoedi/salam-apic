@@ -16,12 +16,14 @@ jobs:
             sudo apt-get -qq install lftp apt-utils git-ftp
 
             # Update Environment
+            rm -rf .env
+            echo "\n\n" >> .env
             echo "CI_ENVIRONMENT = production" >> .env
             echo "app.baseURL = '${CI_BASEURL}'" >> .env
             echo "database.default.hostname = localhost" >> .env
-            echo "database.default.database = ${CI_DATABASE}" >> .env
-            echo "database.default.username = ${CI_USERNAME}" >> .env
-            echo "database.default.password = ${CI_PASSWORD}" >> .env
+            echo "database.default.database = ${CI_DB_NAME}" >> .env
+            echo "database.default.username = ${CI_DB_USER}" >> .env
+            echo "database.default.password = ${CI_DB_PASS}" >> .env
             echo "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
@@ -36,17 +38,20 @@ jobs:
             git config user.name "builder of circleci"
             git config user.email "boc@circleci.com"
             git config git-ftp.user "${FTP_USER}"
-            git config git-ftp.password "${FTP_PWD}"
+            git config git-ftp.password "${FTP_PASS}"
             git config git-ftp.url "${FTP_LOCATION}"
             git config git-ftp.syncroot ./
 
-            mv .gitignore gitignore
+            # mv .gitignore gitignore
+            # sed -i '/vendor/d' .gitignore
+            echo "!vendor/*" > .git-ftp-include
+
             # echo $(git status)
             # ls -alF
             git add --all && git commit -m 'build by circleci'
             
             #echo $(git rev-parse HEAD)
-            git rev-parse HEAD^ | xargs git ftp push -vv --commit
+            git rev-parse HEAD^ | xargs git ftp push --commit
             git ftp push
             git ftp catchup
             
