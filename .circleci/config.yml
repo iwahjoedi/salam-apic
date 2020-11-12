@@ -43,9 +43,10 @@ jobs:
             # echo $(git status)
             # ls -alF
             git add vendor/*
-            
             git commit -m 'build by circleci'
-            git ftp push
+            echo $(git status)
+            
+            # git ftp push
             
 
             # echo $(git status)
