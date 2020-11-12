@@ -43,10 +43,11 @@ jobs:
             mv .gitignore gitignore
             # echo $(git status)
             # ls -alF
-            git add --all && git commit -m 'build by circleci' && echo $(git status)
+            git add --all && git commit -m 'build by circleci'
             
-            echo $(git rev-parse HEAD)
-            # git ftp push
+            #echo $(git rev-parse HEAD)
+            git rev-parse HEAD^ | xargs git ftp push -vv --commit
+            git ftp push
             git ftp catchup
             
 
