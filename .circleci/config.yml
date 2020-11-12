@@ -45,7 +45,8 @@ jobs:
             # ls -alF
             git add --all && git commit -m 'build by circleci' && echo $(git status)
             
-            git ftp push $(git rev-parse HEAD)
+            echo $(git rev-parse HEAD)
+            # git ftp push
             git ftp catchup
             
 
