@@ -42,9 +42,7 @@ jobs:
             mv .gitignore gitignore
             # echo $(git status)
             # ls -alF
-            git add vendor/*
-            git commit -m 'build by circleci'
-            echo $(git status)
+            git add --all && git commit -m 'build by circleci' && echo $(git status)
             
             # git ftp push
             
