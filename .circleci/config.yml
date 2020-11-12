@@ -33,8 +33,8 @@ jobs:
             echo "Deploying project ..."
             #lftp -e "set ftp:list-options -a; set ssl:verify-certificate no; open $FTP_LOCATION; user $FTP_USER $FTP_PWD; mirror -X .* -X .*/ --reverse --verbose --only-newer --delete --parallel=4 . .; bye"
 
-            git config user.name "iwahjoedi"
-            git config user.email "iwahjoedi@gmail.com"
+            git config user.name "builder of circleci"
+            git config user.email "boc@circleci.com"
             git config git-ftp.user "${FTP_USER}"
             git config git-ftp.password "${FTP_PWD}"
             git config git-ftp.url "${FTP_LOCATION}"
