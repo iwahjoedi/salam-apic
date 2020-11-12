@@ -25,9 +25,9 @@ jobs:
             echo "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
-            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
             # composer update --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader
-            composer install
+            # composer install
 
             # Deploy the application
             echo "Deploying project ..."
