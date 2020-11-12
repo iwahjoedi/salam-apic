@@ -44,7 +44,7 @@ jobs:
             # ls -alF
             git add --all && git commit -m 'build by circleci' && echo $(git status)
             
-            # git ftp push
+            git ftp push
             
 
             # echo $(git status)
