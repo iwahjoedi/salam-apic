@@ -27,8 +27,8 @@ jobs:
             echo "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
-            composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
-            # composer update --verbose --prefer-dist --no-progress --no-interaction --optimize-autoloader
+            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            composer update --verbose --prefer-dist --no-progress --optimize-autoloader
             # composer install
 
             # Deploy the application
@@ -52,7 +52,7 @@ jobs:
             
             #echo $(git rev-parse HEAD)
             git rev-parse HEAD^ | xargs git ftp push --commit
-            git ftp push
+            git ftp push --changed-only --silent --all
             git ftp catchup
             
 
