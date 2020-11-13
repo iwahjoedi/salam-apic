@@ -8,9 +8,9 @@ jobs:
  
     steps:
       - checkout
- 
       - run: 
           name: Deploy Master Branch
+          no_output_timeout: 60m
           command: |
             sudo apt-get update
             sudo apt-get -qq install lftp apt-utils git-ftp
@@ -52,7 +52,8 @@ jobs:
             
             #echo $(git rev-parse HEAD)
             git rev-parse HEAD^ | xargs git ftp push --commit
-            git ftp push --changed-only --all
+            # git ftp push -v --changed-only --all
+            git ftp push -v 
             git ftp catchup
             
 
