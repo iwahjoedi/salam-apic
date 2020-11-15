@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d85ec1799187fee488bec611952443f7",
+    "content-hash": "08cf2cbbff44921f86e9fb9b4677ecfc",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -479,74 +479,6 @@
             "time": "2020-05-30T08:05:22+00:00"
         },
         {
-            "name": "myth/auth",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lonnieezell/myth-auth.git",
-                "reference": "cb65c89845f2c47da549cc24f26388f66bb99a35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lonnieezell/myth-auth/zipball/cb65c89845f2c47da549cc24f26388f66bb99a35",
-                "reference": "cb65c89845f2c47da549cc24f26388f66bb99a35",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "codeigniter4/codeigniter4": "dev-develop",
-                "codeigniter4/codeigniter4-standard": "^1.0",
-                "fzaninotto/faker": "^1.9@dev",
-                "mockery/mockery": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^8.5",
-                "squizlabs/php_codesniffer": "^3.5"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Myth\\Auth\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Lonnie Ezell",
-                    "email": "lonnieje@gmail.com",
-                    "homepage": "http://newmythmedia.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Flexible authentication/authorization system for CodeIgniter 4.",
-            "homepage": "https://github.com/lonnieezell/myth-auth",
-            "keywords": [
-                "Authentication",
-                "authorization",
-                "codeigniter"
-            ],
-            "support": {
-                "issues": "https://github.com/lonnieezell/myth-auth/issues",
-                "source": "https://github.com/lonnieezell/myth-auth/tree/develop"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/lonnieezell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/lonnieezell",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2020-11-09T19:32:27+00:00"
-        },
-        {
             "name": "psr/http-client",
             "version": "dev-master",
             "source": {
@@ -749,30 +681,31 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "tatter/visits",
-            "version": "dev-develop",
+            "name": "tatter/schemas",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
-                "url": "https://github.com/tattersoftware/codeigniter4-visits.git",
-                "reference": "2810f7b2670d53972045fa62de617ffc269b33f5"
+                "url": "https://github.com/tattersoftware/codeigniter4-schemas.git",
+                "reference": "36e71bc8f8de8126d5cf91f9e9d13412facbe1eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-visits/zipball/2810f7b2670d53972045fa62de617ffc269b33f5",
-                "reference": "2810f7b2670d53972045fa62de617ffc269b33f5",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-schemas/zipball/36e71bc8f8de8126d5cf91f9e9d13412facbe1eb",
+                "reference": "36e71bc8f8de8126d5cf91f9e9d13412facbe1eb",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "codeigniter4/framework": "dev-master"
+                "codeigniter4/codeigniter4": "dev-develop",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "8.5.*"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Tatter\\Visits\\": "src"
+                    "Tatter\\Schemas\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -787,20 +720,21 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Lightweight traffic tracking for CodeIgniter 4",
-            "homepage": "https://github.com/tattersoftware/codeigniter4-visits",
+            "description": "Database schema management, for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-schemas",
             "keywords": [
-                "analytics",
                 "codeigniter",
                 "codeigniter4",
-                "traffic",
-                "visits"
+                "database",
+                "mapping",
+                "schemas",
+                "structure"
             ],
             "support": {
-                "issues": "https://github.com/tattersoftware/codeigniter4-visits/issues",
-                "source": "https://github.com/tattersoftware/codeigniter4-visits/tree/v1.1.2"
+                "issues": "https://github.com/tattersoftware/codeigniter4-schemas/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-schemas/tree/v2.0.12"
             },
-            "time": "2019-08-28T17:59:24+00:00"
+            "time": "2020-11-11T21:36:54+00:00"
         }
     ],
     "packages-dev": [
@@ -2785,8 +2719,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "myth/auth": 20,
-        "tatter/visits": 20,
         "wensleydale/spark": 20
     },
     "prefer-stable": false,
