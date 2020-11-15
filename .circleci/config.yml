@@ -42,8 +42,8 @@ jobs:
             echo ".editorconfig" >> .gitignore
             echo ".env.dev" >> .gitignore
             echo ".gitlab-ci.yaml" >> .gitignore
-            echo "composer.json" >> .gitignore
-            echo "composer.lock" >> .gitignore
+            # echo "composer.json" >> .gitignore
+            # echo "composer.lock" >> .gitignore
             echo "docker-compose.yml" >> .gitignore
             echo "env.prod" >> .gitignore
             echo "README.md" >> .gitignore
@@ -113,6 +113,7 @@ jobs:
 
             # echo -e "catchup sha1 of remote"
             # git ftp catchup -vv
+
             echo -e "[IW] back to default checkout and then catchup..."
             git checkout ${CIRCLE_SHA1}
             git ftp catchup -v
