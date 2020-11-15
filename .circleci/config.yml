@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: 
           name: Deploy Master Branch
-          no_output_timeout: 60m
+          no_output_timeout: 30m
           command: |
             sudo apt-get update
             sudo apt-get -qq install lftp apt-utils git-ftp
