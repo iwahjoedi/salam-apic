@@ -66,6 +66,7 @@ jobs:
             echo "vendor/**" >> .gitignore
 
             # NOPE
+            # NOPE
 
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
