@@ -93,7 +93,7 @@ jobs:
 
             echo -e "Push all files those checkout to ftp-server"
             # git ftp push -v --all
-            git ftp push -vv --changed-only # Must push using clean sha1 on remote
+            git ftp push -vv --changed-only --auto-init # Must push using clean sha1 on remote
 
 
             # git rev-parse HEAD^ | xargs git ftp push --commit
