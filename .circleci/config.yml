@@ -15,6 +15,8 @@ jobs:
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
 
+
+
             # Update Environment
             rm -rf .env
             echo -e "\n\n" >> .env
@@ -26,14 +28,6 @@ jobs:
             echo -e "database.default.password = ${CI_DB_PASS}" >> .env
             echo -e "database.default.DBDRIVER = MySQLi" >> .env
 
-            # Build the application
-            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
-            composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
-            # composer install
-
-            # Deploy the application
-            echo "Deploying project ..."
-            #lftp -e "set ftp:list-options -a; set ssl:verify-certificate no; open $FTP_LOCATION; user $FTP_USER $FTP_PWD; mirror -X .* -X .*/ --reverse --verbose --only-newer --delete --parallel=4 . .; bye"
 
             git config user.name "builder of circleci"
             git config user.email "boc@circleci.com"
@@ -65,11 +59,6 @@ jobs:
             # echo "writeable/**" >> .gitignore
             echo "vendor/**" >> .gitignore
 
-            # NOPE
-            # NOPE
-            # NOPE
-            # NOPE
-
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
             # sed -i '/vendor/d' .gitignore
@@ -79,6 +68,22 @@ jobs:
             # echo ".env.dev" > .git-ftp-include
 
             # echo $(git status)
+            
+            # Git commit for adding .gitignore
+            git add --all && git commit -m 'add git ignore' --quiet
+
+            # Touch ftp before anything
+            git ftp catchup -vv
+
+            # Build the application
+            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
+            # composer install
+
+            # Deploy the application
+            echo "Deploying project ..."
+            #lftp -e "set ftp:list-options -a; set ssl:verify-certificate no; open $FTP_LOCATION; user $FTP_USER $FTP_PWD; mirror -X .* -X .*/ --reverse --verbose --only-newer --delete --parallel=4 . .; bye"
+
 
             # ls -alF
             # git ftp catchup
