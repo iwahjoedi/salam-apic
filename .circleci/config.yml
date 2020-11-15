@@ -65,6 +65,8 @@ jobs:
             # echo "writeable/**" >> .gitignore
             echo "vendor/**" >> .gitignore
 
+            # NOPE
+
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
             # sed -i '/vendor/d' .gitignore
