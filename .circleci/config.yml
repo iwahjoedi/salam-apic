@@ -7,9 +7,6 @@ jobs:
     working_directory: ~/repo
  
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "${CIRCLE_USERKEY}"
       - checkout
       - run: 
           name: Deploy Master Branch
@@ -17,10 +14,6 @@ jobs:
           command: |
             sudo apt-get update
             sudo apt-get -qq install apt-utils git-ftp
-
-            # Change branch
-            git checkout build
-            git merge master
 
             # Update Environment
             rm -rf .env
@@ -125,4 +118,4 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: master
+              only: build
