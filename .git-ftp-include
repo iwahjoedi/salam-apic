@@ -1,3 +1,4 @@
 #.htaccess
 #.env.dev
-vendor/:composer.lock
+vendor/
+# vendor/:composer.lock
