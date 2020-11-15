@@ -49,7 +49,6 @@ jobs:
             echo "phpunit.xml.dist" >> .gitignore
             echo "spark" >> .gitignore
             echo ".git/**" >> .gitignore
-            echo "circleci/**" >> .gitignore
             echo ".editorconfig" >> .gitignore
             echo ".env.dev" >> .gitignore
             echo ".gitlab-ci.yaml" >> .gitignore
@@ -60,6 +59,7 @@ jobs:
             echo "README.md" >> .gitignore
             echo "init-git-ftp" >> .gitignore
 
+            echo "circleci/**" >> .gitignore
             echo "app/**" >> .gitignore
             echo "system/**" >> .gitignore
             echo "writeable/**" >> .gitignore
