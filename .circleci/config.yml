@@ -13,7 +13,7 @@ jobs:
           no_output_timeout: 30m
           command: |
             sudo apt-get update
-            sudo apt-get -qq install lftp apt-utils git-ftp
+            sudo apt-get -qq install apt-utils git-ftp
 
             # Update Environment
             rm -rf .env
