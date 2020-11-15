@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3aee9e800f9cd1ef8db49f6d1603979d",
+    "content-hash": "d85ec1799187fee488bec611952443f7",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -747,6 +747,60 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "tatter/visits",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-visits.git",
+                "reference": "2810f7b2670d53972045fa62de617ffc269b33f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-visits/zipball/2810f7b2670d53972045fa62de617ffc269b33f5",
+                "reference": "2810f7b2670d53972045fa62de617ffc269b33f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "codeigniter4/framework": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Visits\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lightweight traffic tracking for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-visits",
+            "keywords": [
+                "analytics",
+                "codeigniter",
+                "codeigniter4",
+                "traffic",
+                "visits"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-visits/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-visits/tree/v1.1.2"
+            },
+            "time": "2019-08-28T17:59:24+00:00"
         }
     ],
     "packages-dev": [
@@ -2732,6 +2786,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "myth/auth": 20,
+        "tatter/visits": 20,
         "wensleydale/spark": 20
     },
     "prefer-stable": false,
