@@ -70,7 +70,7 @@ jobs:
             # sed -i '/vendor/d' .gitignore
             # echo "!vendor/*" > .git-ftp-include
             # echo ".circleci/config.yml" > .git-ftp-include
-            echo ".htaccess" > .git-ftp-include
+            # echo ".htaccess" > .git-ftp-include
             # echo ".env.dev" > .git-ftp-include
 
             # echo $(git status)
@@ -92,8 +92,8 @@ jobs:
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
-            git ftp push -v --all
-            # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
+            # git ftp push -v --all
+            yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
 
 
             # git rev-parse HEAD^ | xargs git ftp push --commit

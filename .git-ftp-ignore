@@ -1,4 +1,4 @@
-.git/
-app/
-system/
-writeable/
+#.git/
+#app/
+#system/
+#writeable/

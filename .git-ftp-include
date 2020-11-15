@@ -1,3 +1,2 @@
 .htaccess
-.circleci/config.yml
-.env.dev
+#.env.dev
