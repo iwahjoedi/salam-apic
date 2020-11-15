@@ -103,8 +103,8 @@ jobs:
             # echo $(git status)
             # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
 
-            echo -e "catchup sha1 of remote"
-            git ftp catchup
+            # echo -e "catchup sha1 of remote"
+            # git ftp catchup
  
 workflows:
   version: 2
