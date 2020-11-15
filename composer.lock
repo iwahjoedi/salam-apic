@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33c10dc9fd9bf24aea78b850b65fe773",
+    "content-hash": "2a5a688ca37ec6ec1e0970dce2c2139e",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -679,6 +679,112 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "tatter/settings",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-settings.git",
+                "reference": "ac6a113303794f010db79c69e076c6cd8858fbcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-settings/zipball/ac6a113303794f010db79c69e076c6cd8858fbcf",
+                "reference": "ac6a113303794f010db79c69e076c6cd8858fbcf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4": "dev-develop",
+                "tatter/tools": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Settings\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lightweight settings management for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-settings",
+            "keywords": [
+                "Settings",
+                "codeigniter",
+                "codeigniter4",
+                "preferences"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-settings/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-settings/tree/v1.1.0"
+            },
+            "time": "2020-11-12T18:01:10+00:00"
+        },
+        {
+            "name": "tatter/themes",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-themes.git",
+                "reference": "0f2b3e6c2c06674c7549990b02918dc1db388c09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-themes/zipball/0f2b3e6c2c06674c7549990b02918dc1db388c09",
+                "reference": "0f2b3e6c2c06674c7549990b02918dc1db388c09",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "tatter/settings": "^1.0"
+            },
+            "require-dev": {
+                "codeigniter4/framework": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Themes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lightweight theme manager for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-themes",
+            "keywords": [
+                "codeigniter",
+                "codeigniter4",
+                "css",
+                "themes"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-themes/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-themes/tree/develop"
+            },
+            "time": "2019-12-04T16:01:36+00:00"
         }
     ],
     "packages-dev": [
