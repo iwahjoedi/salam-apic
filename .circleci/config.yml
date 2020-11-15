@@ -62,8 +62,8 @@ jobs:
             echo ".circleci/**" >> .gitignore
             echo "app/**" >> .gitignore
             echo "system/**" >> .gitignore
-            echo "writeable/**" >> .gitignore
-            # echo "vendor/**" >> .gitignore
+            # echo "writeable/**" >> .gitignore
+            echo "vendor/**" >> .gitignore
 
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
