@@ -45,6 +45,9 @@ jobs:
             # mv .gitignore gitignore
             # sed -i '/vendor/d' .gitignore
             echo "!vendor/*" > .git-ftp-include
+            echo ".circleci/config.yml" > .git-ftp-include
+            echo ".htaccess" > .git-ftp-include
+            echo ".env.dev" > .git-ftp-include
 
             # echo $(git status)
             # ls -alF
