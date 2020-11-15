@@ -71,7 +71,7 @@ jobs:
             git add --all && git commit -m 'add .gitignore' --quiet
 
             # Touch ftp before anything
-            git ftp catchup -vv
+            # git ftp catchup -vv
 
             # Build the application
             # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader

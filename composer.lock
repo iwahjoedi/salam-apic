@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "08cf2cbbff44921f86e9fb9b4677ecfc",
+    "content-hash": "cc3a8c79d04540b80d28a53c7a7175d3",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -679,6 +679,65 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "tatter/permits",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tattersoftware/codeigniter4-permits.git",
+                "reference": "c04d7c7db198d0a9117c58150055c9ef08b5519c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-permits/zipball/c04d7c7db198d0a9117c58150055c9ef08b5519c",
+                "reference": "c04d7c7db198d0a9117c58150055c9ef08b5519c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4": "dev-develop",
+                "codeigniter4/codeigniter4-standard": "^1.0",
+                "fzaninotto/faker": "^1.9@dev",
+                "mikey179/vfsstream": "^1.6",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tatter\\Permits\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthew Gatner",
+                    "email": "mgatner@tattersoftware.com",
+                    "homepage": "https://tattersoftware.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Dynamic permission handling for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-permits",
+            "keywords": [
+                "authorization",
+                "codeigniter",
+                "codeigniter4",
+                "permission",
+                "rights"
+            ],
+            "support": {
+                "issues": "https://github.com/tattersoftware/codeigniter4-permits/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-permits/tree/v2.1.5"
+            },
+            "time": "2020-10-21T19:21:29+00:00"
         },
         {
             "name": "tatter/schemas",
