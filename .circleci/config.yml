@@ -17,14 +17,14 @@ jobs:
 
             # Update Environment
             rm -rf .env
-            echo "\n\n" >> .env
-            echo "CI_ENVIRONMENT = production" >> .env
-            echo "app.baseURL = '${CI_BASEURL}'" >> .env
-            echo "database.default.hostname = localhost" >> .env
-            echo "database.default.database = ${CI_DB_NAME}" >> .env
-            echo "database.default.username = ${CI_DB_USER}" >> .env
-            echo "database.default.password = ${CI_DB_PASS}" >> .env
-            echo "database.default.DBDRIVER = MySQLi" >> .env
+            echo -e "\n\n" >> .env
+            echo -e "CI_ENVIRONMENT = production" >> .env
+            echo -e "app.baseURL = '${CI_BASEURL}'" >> .env
+            echo -e "database.default.hostname = localhost" >> .env
+            echo -e "database.default.database = ${CI_DB_NAME}" >> .env
+            echo -e "database.default.username = ${CI_DB_USER}" >> .env
+            echo -e "database.default.password = ${CI_DB_PASS}" >> .env
+            echo -e "database.default.DBDRIVER = MySQLi" >> .env
 
             # Build the application
             # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
@@ -44,10 +44,10 @@ jobs:
 
             # mv .gitignore gitignore
             # sed -i '/vendor/d' .gitignore
-            echo "!vendor/*" > .git-ftp-include
-            echo ".circleci/config.yml" > .git-ftp-include
-            echo ".htaccess" > .git-ftp-include
-            echo ".env.dev" > .git-ftp-include
+            # echo "!vendor/*" > .git-ftp-include
+            # echo ".circleci/config.yml" > .git-ftp-include
+            # echo ".htaccess" > .git-ftp-include
+            # echo ".env.dev" > .git-ftp-include
 
             # echo $(git status)
             # ls -alF
