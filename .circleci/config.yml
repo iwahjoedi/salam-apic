@@ -70,7 +70,7 @@ jobs:
 
             # Touch ftp before anything
             git rev-parse HEAD | xargs git checkout
-            # git ftp catchup -vv
+            git ftp catchup -vv
 
             # git checkout master
 
@@ -115,7 +115,7 @@ jobs:
             # git ftp catchup -vv
             echo -e "[IW] back to default checkout and then catchup..."
             git checkout ${CIRCLE_SHA1}
-            git ftp catchup -vv 
+            git ftp catchup -v
  
 workflows:
   version: 2
