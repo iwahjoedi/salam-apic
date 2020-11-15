@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '60eb4bdedaa813dc441f1122ba20a7df9c449b9e',
+    'reference' => '75615d10dd75dddd0755b36237925b32c88254c2',
     'name' => 'iwahjoedi/salam-apic',
   ),
   'versions' => 
@@ -263,7 +263,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '60eb4bdedaa813dc441f1122ba20a7df9c449b9e',
+      'reference' => '75615d10dd75dddd0755b36237925b32c88254c2',
     ),
     'kint-php/kint' => 
     array (
@@ -490,6 +490,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '120b605dfeb996808c31b6477290a714d356e822',
+    ),
+    'samsonasik/ci4-album' => 
+    array (
+      'pretty_version' => '1.9.4',
+      'version' => '1.9.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ac5d31f53beb67384d82b90bbe2e0da2d80492d0',
     ),
     'sebastian/code-unit-reverse-lookup' => 
     array (

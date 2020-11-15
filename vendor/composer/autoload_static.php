@@ -71,6 +71,10 @@ class ComposerStaticInitcb7bff7fd0e394bde1837c596c576f4d
         array (
             'CodeIgniter\\' => 12,
         ),
+        'A' => 
+        array (
+            'Album\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -155,6 +159,10 @@ class ComposerStaticInitcb7bff7fd0e394bde1837c596c576f4d
         'CodeIgniter\\' => 
         array (
             0 => __DIR__ . '/../..' . '/system',
+        ),
+        'Album\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/samsonasik/ci4-album/src',
         ),
     );
 

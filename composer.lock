@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64a21b8fa90750d0e5597cfc99b59219",
+    "content-hash": "b27c7c8fe48a9b5a9fc5af2975b03a3b",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -679,6 +679,67 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "samsonasik/ci4-album",
+            "version": "1.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/samsonasik/ci4-album.git",
+                "reference": "ac5d31f53beb67384d82b90bbe2e0da2d80492d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/samsonasik/ci4-album/zipball/ac5d31f53beb67384d82b90bbe2e0da2d80492d0",
+                "reference": "ac5d31f53beb67384d82b90bbe2e0da2d80492d0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4-standard": "^1.0.1",
+                "codeigniter4/framework": "^4.0.3",
+                "phpstan/phpstan": "^0.12.14",
+                "phpunit/phpunit": "^8",
+                "squizlabs/php_codesniffer": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Album\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Abdul Malik Ikhsan",
+                    "email": "samsonasik@gmail.com",
+                    "homepage": "http://samsonasik.wordpress.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An Example of CodeIgniter 4 Album module",
+            "homepage": "https://github.com/samsonasik/ci4-album",
+            "keywords": [
+                "CI4",
+                "codeigniter",
+                "codeigniter4"
+            ],
+            "support": {
+                "issues": "https://github.com/samsonasik/ci4-album/issues",
+                "source": "https://github.com/samsonasik/ci4-album/tree/1.9.4"
+            },
+            "funding": [
+                {
+                    "url": "https://samsonasik.wordpress.com/donate/",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-09-19T16:58:47+00:00"
         },
         {
             "name": "tatter/alerts",
