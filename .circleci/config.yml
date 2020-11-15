@@ -47,7 +47,7 @@ jobs:
             echo ".env.dev" >> .gitignore
             echo ".gitlab-ci.yaml" >> .gitignore
             echo "composer.json" >> .gitignore
-            echo "composer.lock" >> .gitignore
+            # echo "composer.lock" >> .gitignore
             echo "docker-compose.yml" >> .gitignore
             echo "env.prod" >> .gitignore
             echo "README.md" >> .gitignore
@@ -56,7 +56,7 @@ jobs:
             echo ".circleci/**" >> .gitignore
             echo "app/**" >> .gitignore
             echo "system/**" >> .gitignore
-            # echo "writeable/**" >> .gitignore
+            echo "writeable/**" >> .gitignore
             echo "vendor/**" >> .gitignore
 
             # echo "spark" > .gitignore
@@ -70,7 +70,7 @@ jobs:
             # echo $(git status)
             
             # Git commit for adding .gitignore
-            git add --all && git commit -m 'add git ignore' --quiet
+            git add --all && git commit -m 'add .gitignore' --quiet
 
             # Touch ftp before anything
             git ftp catchup -vv
