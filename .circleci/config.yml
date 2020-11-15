@@ -67,8 +67,8 @@ jobs:
 
             # Build the application
             # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
-            composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
-            composer update
+            # composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
+            # composer update
 
             # Deploy the application
             echo "Deploying project ..."
@@ -80,7 +80,6 @@ jobs:
             echo -e  "[IW] $(git status)"
 
             git add --all && git commit -m 'build by circleci' #--quiet
-            git push origin build
 
             # echo -e "Ini build sha1: $(git rev-parse HEAD)"
             # echo -e "Ini -1 sebelum build sha1: $(git rev-parse HEAD^)"
