@@ -1,6 +1,11 @@
 # Disable directory browsing
 Options All -Indexes
 
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
 # ----------------------------------------------------------------------
 # Rewrite engine
 # ----------------------------------------------------------------------
@@ -11,11 +16,19 @@ Options All -Indexes
 	Options +FollowSymlinks
 	RewriteEngine On
 
+  RewriteCond %{HTTP_REFERER} !^$
+
+  RewriteCond %{HTTP_REFERER} !^http://(www\.)?api.almumtazpontianak.sch.id/.*$ [NC]
+
   # Deny any folder
   RewriteRule (^|/)app(/|$) - [F]
   RewriteRule (^|/)system(/|$) - [F]
   RewriteRule (^|/)vendor(/|$) - [F]
   RewriteRule (^|/)writeable(/|$) - [F]
+  RewriteRule .(gif|jpg)$ – [F]
+  RewriteRule (spark|docker-compose.yml)$ – [F]
+
+
 
   # Deny any file
 
@@ -46,11 +59,15 @@ Options All -Indexes
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
 
+
+
 <IfModule !mod_rewrite.c>
     # If we don't have mod_rewrite installed, all 404's
     # can be sent to index.php, and everything works as normal.
     ErrorDocument 404 index.php
 </IfModule>
+
+
 
 # Disable server signature start
 ServerSignature Off
