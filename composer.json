@@ -21,7 +21,8 @@
         "guzzlehttp/guzzle": "^7.2.0",
         "monken/cli-create": "^0.3.1",
         "tatter/permits": "2.1.5",
-        "tatter/themes": "1.0.3"
+        "tatter/themes": "1.0.3",
+        "tatter/thumbnails": "1.2.2"
     },
     "require-dev": {
         "codeigniter4/codeigniter4-standard": "^1.0",
