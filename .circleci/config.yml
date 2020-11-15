@@ -85,7 +85,7 @@ jobs:
             # echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
             # echo -e "Ini sebelum build sha1: $(git rev-parse HEAD)"
 
-            echo $(git status)
+            echo -e  "[IW] $(git status)"
 
             git add --all && git commit -m 'build by circleci' #--quiet
 
@@ -98,7 +98,7 @@ jobs:
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
-            git ftp push
+            git ftp push --all
 
             # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
 
