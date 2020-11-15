@@ -24,14 +24,16 @@ echo "system/*" >> .gitignore &&
 echo "writeable/*" >> .gitignore &&
 echo "vendor/*" >> .gitignore &&
 
+cat .gitignore &&
+
 git add --all && git commit -m 'git-ftp-init' --quiet &&
 
 git rev-parse HEAD | xargs git checkout &&
-git ftp init -vv  &&
-git ftp catchup -vv &&
+# git ftp init -vv  &&
+# git ftp catchup -vv &&
 
-git checkout master &&
-git branch -d git-ftp-init &&
+# git checkout master &&
+# git branch -d git-ftp-init &&
 
 echo "[IW] git-ftp init done."
 
