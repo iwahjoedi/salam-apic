@@ -114,6 +114,9 @@ jobs:
 
             # echo -e "catchup sha1 of remote"
             # git ftp catchup -vv
+            echo -e "[IW] back to default checkout and then catchup..."
+            git checkout ${CIRCLE_SHA1}
+            git ftp catchup -vv 
  
 workflows:
   version: 2
