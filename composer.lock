@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "37258b7db85828438d1bf8526cbbf691",
+    "content-hash": "64a21b8fa90750d0e5597cfc99b59219",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -681,136 +681,21 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "samsonasik/ci4-album",
-            "version": "1.9.4",
+            "name": "tatter/alerts",
+            "version": "v2.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/samsonasik/ci4-album.git",
-                "reference": "ac5d31f53beb67384d82b90bbe2e0da2d80492d0"
+                "url": "https://github.com/tattersoftware/codeigniter4-alerts.git",
+                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/samsonasik/ci4-album/zipball/ac5d31f53beb67384d82b90bbe2e0da2d80492d0",
-                "reference": "ac5d31f53beb67384d82b90bbe2e0da2d80492d0",
+                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-alerts/zipball/08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
+                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "codeigniter4/codeigniter4-standard": "^1.0.1",
-                "codeigniter4/framework": "^4.0.3",
-                "phpstan/phpstan": "^0.12.14",
-                "phpunit/phpunit": "^8",
-                "squizlabs/php_codesniffer": "^3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Album\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Abdul Malik Ikhsan",
-                    "email": "samsonasik@gmail.com",
-                    "homepage": "http://samsonasik.wordpress.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "An Example of CodeIgniter 4 Album module",
-            "homepage": "https://github.com/samsonasik/ci4-album",
-            "keywords": [
-                "CI4",
-                "codeigniter",
-                "codeigniter4"
-            ],
-            "support": {
-                "issues": "https://github.com/samsonasik/ci4-album/issues",
-                "source": "https://github.com/samsonasik/ci4-album/tree/1.9.4"
-            },
-            "funding": [
-                {
-                    "url": "https://samsonasik.wordpress.com/donate/",
-                    "type": "custom"
-                }
-            ],
-            "time": "2020-09-19T16:58:47+00:00"
-        },
-        {
-            "name": "tatter/settings",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tattersoftware/codeigniter4-settings.git",
-                "reference": "ac6a113303794f010db79c69e076c6cd8858fbcf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-settings/zipball/ac6a113303794f010db79c69e076c6cd8858fbcf",
-                "reference": "ac6a113303794f010db79c69e076c6cd8858fbcf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "codeigniter4/codeigniter4": "dev-develop",
-                "tatter/tools": "^1.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tatter\\Settings\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthew Gatner",
-                    "email": "mgatner@tattersoftware.com",
-                    "homepage": "https://tattersoftware.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lightweight settings management for CodeIgniter 4",
-            "homepage": "https://github.com/tattersoftware/codeigniter4-settings",
-            "keywords": [
-                "Settings",
-                "codeigniter",
-                "codeigniter4",
-                "preferences"
-            ],
-            "support": {
-                "issues": "https://github.com/tattersoftware/codeigniter4-settings/issues",
-                "source": "https://github.com/tattersoftware/codeigniter4-settings/tree/v1.1.0"
-            },
-            "time": "2020-11-12T18:01:10+00:00"
-        },
-        {
-            "name": "tatter/themes",
-            "version": "v1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tattersoftware/codeigniter4-themes.git",
-                "reference": "0f2b3e6c2c06674c7549990b02918dc1db388c09"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-themes/zipball/0f2b3e6c2c06674c7549990b02918dc1db388c09",
-                "reference": "0f2b3e6c2c06674c7549990b02918dc1db388c09",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0",
-                "tatter/settings": "^1.0"
+                "php": "^7.0"
             },
             "require-dev": {
                 "codeigniter4/framework": "dev-master"
@@ -818,7 +703,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Tatter\\Themes\\": "src"
+                    "Tatter\\Alerts\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -833,19 +718,20 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Lightweight theme manager for CodeIgniter 4",
-            "homepage": "https://github.com/tattersoftware/codeigniter4-themes",
+            "description": "Lightweight user alerts for CodeIgniter 4",
+            "homepage": "https://github.com/tattersoftware/codeigniter4-alerts",
             "keywords": [
+                "alerts",
                 "codeigniter",
                 "codeigniter4",
-                "css",
-                "themes"
+                "dialogs",
+                "messages"
             ],
             "support": {
-                "issues": "https://github.com/tattersoftware/codeigniter4-themes/issues",
-                "source": "https://github.com/tattersoftware/codeigniter4-themes/tree/develop"
+                "issues": "https://github.com/tattersoftware/codeigniter4-alerts/issues",
+                "source": "https://github.com/tattersoftware/codeigniter4-alerts/tree/develop"
             },
-            "time": "2019-12-04T16:01:36+00:00"
+            "time": "2020-06-03T19:07:43+00:00"
         }
     ],
     "packages-dev": [
