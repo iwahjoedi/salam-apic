@@ -129,6 +129,6 @@ nb-configuration.xml
 # Codeigniter
 #vendor/
 composer.lock
-.git-ftp.log
+#.git-ftp.log
 
 # system/ThirdParty/
