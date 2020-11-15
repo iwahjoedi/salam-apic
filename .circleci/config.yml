@@ -53,12 +53,18 @@ jobs:
             # ls -alF
             # git ftp catchup
 
+
+            echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
+            echo -e "Ini sebelum build sha1: $(git rev-parse HEAD)"
+
             git add --all && git commit -m 'build by circleci'
 
-            #echo $(git rev-parse HEAD)
+            echo -e "Ini build sha1: $(git rev-parse HEAD)"
+            echo -e "Ini -1 sebelum build sha1: $(git rev-parse HEAD^)"
+
             # git rev-parse HEAD^ | xargs git ftp push --commit
             # git ftp push -v --changed-only --all
-            git ftp push -vv --all
+            # git ftp push -vv --all
 
             # echo $(git status)
             # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
