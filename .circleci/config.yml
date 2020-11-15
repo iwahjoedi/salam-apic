@@ -60,10 +60,10 @@ jobs:
             echo "README.md" >> .gitignore
             echo "init-git-ftp" >> .gitignore
 
-            # echo "app/" >> .gitignore
-            # echo "system/" >> .gitignore
-            # echo "writeable/" >> .gitignore
-            # echo "vendor/" >> .gitignore
+            echo "app/" >> .gitignore
+            echo "system/" >> .gitignore
+            echo "writeable/" >> .gitignore
+            echo "vendor/" >> .gitignore
 
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
@@ -93,7 +93,7 @@ jobs:
 
             echo -e "Push all files those checkout to ftp-server"
             # git ftp push -v --all
-            yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
+            yes Y | git ftp push --silent --changed-only # Must push using clean sha1 on remote
 
 
             # git rev-parse HEAD^ | xargs git ftp push --commit
