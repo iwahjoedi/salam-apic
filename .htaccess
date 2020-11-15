@@ -25,10 +25,6 @@ deny from all
   RewriteRule (^|/)system(/|$) - [F]
   RewriteRule (^|/)vendor(/|$) - [F]
   RewriteRule (^|/)writeable(/|$) - [F]
-  RewriteRule .(gif|jpg)$ – [F]
-  RewriteRule (spark|docker-compose.yml)$ – [F]
-
-
 
   # Deny any file
 
