@@ -97,8 +97,8 @@ jobs:
 
             echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
             echo -e "Ini after build sha1: $(git rev-parse HEAD)"
-            echo -e "Checkout to current build"
 
+            echo -e "Checkout to current build"
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
