@@ -53,7 +53,7 @@ jobs:
             # echo "app/**" >> .gitignore
             # echo "system/**" >> .gitignore
             # echo "writeable/**" >> .gitignore
-            # echo "vendor/**" >> .gitignore
+            echo "vendor/**" >> .gitignore
 
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
@@ -66,10 +66,10 @@ jobs:
             # echo $(git status)
             
             # Git commit for adding .gitignore
-            # git add --all && git commit -m 'add .gitignore' --quiet
+            git add --all && git commit -m 'add .gitignore' --quiet
 
             # Touch ftp before anything
-            # git rev-parse HEAD | xargs git checkout
+            git rev-parse HEAD | xargs git checkout
             # git ftp catchup -vv
 
             # git checkout master
