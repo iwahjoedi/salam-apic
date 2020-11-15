@@ -91,7 +91,7 @@ jobs:
             # echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
             # echo -e "Ini sebelum build sha1: $(git rev-parse HEAD)"
 
-            git add --all && git commit -m 'build by circleci' --quiet
+            git add --all && git commit -m 'build by circleci' #--quiet
 
             # echo -e "Ini build sha1: $(git rev-parse HEAD)"
             # echo -e "Ini -1 sebelum build sha1: $(git rev-parse HEAD^)"
@@ -102,7 +102,7 @@ jobs:
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
-            git ftp push -vv 
+            # git ftp push -vv
 
             # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
 
@@ -115,7 +115,7 @@ jobs:
             # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
 
             # echo -e "catchup sha1 of remote"
-            git ftp catchup -vv
+            # git ftp catchup -vv
  
 workflows:
   version: 2
