@@ -24,7 +24,7 @@ echo "system/*" >> .gitignore &&
 echo "writeable/*" >> .gitignore &&
 echo "vendor/*" >> .gitignore &&
 
-git add --all && git commit -m 'git-ftp-init' --quite &&
+git add --all && git commit -m 'git-ftp-init' --quiet &&
 
 git rev-parse HEAD | xargs git checkout &&
 git ftp init -vv  &&
