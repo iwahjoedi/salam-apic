@@ -48,8 +48,8 @@ jobs:
             echo "docker-compose.yml" >> .gitignore
             echo "phpunit.xml.dist" >> .gitignore
             echo "spark" >> .gitignore
-            echo ".git/*" >> .gitignore
-            echo ".circleci/*" >> .gitignore
+            echo ".git/" >> .gitignore
+            echo ".circleci/" >> .gitignore
             echo ".editorconfig" >> .gitignore
             echo ".env.dev" >> .gitignore
             echo ".gitlab-ci.yaml" >> .gitignore
