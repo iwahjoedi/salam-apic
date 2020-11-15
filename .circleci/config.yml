@@ -91,7 +91,7 @@ jobs:
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
-            # git ftp push -v --changed-only
+            git ftp push -v --changed-only
 
             # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
 
