@@ -76,7 +76,7 @@ jobs:
             # Build the application
             # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
             composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
-            # composer install
+            composer update
 
             # Deploy the application
             echo "Deploying project ..."
@@ -98,7 +98,7 @@ jobs:
             git rev-parse HEAD | xargs git checkout
 
             echo -e "Push all files those checkout to ftp-server"
-            # git ftp push -vv
+            git ftp push -vv
 
             # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
 
