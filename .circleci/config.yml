@@ -62,7 +62,7 @@ jobs:
 
             echo "app/**" >> .gitignore
             echo "system/**" >> .gitignore
-            # echo "writeable/" >> .gitignore
+            echo "writeable/**" >> .gitignore
             echo "vendor/**" >> .gitignore
 
             # echo "spark" > .gitignore
