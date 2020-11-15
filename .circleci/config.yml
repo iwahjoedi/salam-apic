@@ -53,7 +53,7 @@ jobs:
             #echo $(git rev-parse HEAD)
             git rev-parse HEAD^ | xargs git ftp push --commit
             # git ftp push -v --changed-only --all
-            git ftp push -v 
+            git ftp push -vv
             git ftp catchup
             
 
