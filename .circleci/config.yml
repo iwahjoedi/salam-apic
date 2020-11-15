@@ -43,11 +43,23 @@ jobs:
             git config git-ftp.syncroot ./
 
 
-            # Add your git-ftp exclude files here
             rm -rf .gitignore
-            echo "docker-compose.yml" > .gitignore
-            echo "phpunit.xml.dist" > .gitignore
-            echo "spark" > .gitignore
+            # Add your git-ftp exclude files here
+            echo "docker-compose.yml" >> .gitignore
+            echo "phpunit.xml.dist" >> .gitignore
+            echo "spark" >> .gitignore
+            echo ".git/*" >> .gitignore
+            echo ".circleci/*" >> .gitignore
+            echo ".editorconfig" >> .gitignore
+            echo ".env.dev" >> .gitignore
+            echo ".gitlab-ci.yaml" >> .gitignore
+            echo "composer.json" >> .gitignore
+            echo "composer.lock" >> .gitignore
+            echo "docker-compose.yml" >> .gitignore
+            echo "env.prod" >> .gitignore
+            echo "README.md" >> .gitignore
+            echo "init-git-ftp" >> .gitignore
+
             # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
             # sed -i '/vendor/d' .gitignore
