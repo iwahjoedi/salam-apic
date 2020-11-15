@@ -42,11 +42,13 @@ jobs:
             git config git-ftp.url "${FTP_LOCATION}"
             git config git-ftp.syncroot ./
 
-            # mv .gitignore gitignore
+
+            # Add your git-ftp exclude files here
             rm -rf .gitignore
             echo "docker-compose.yml" > .gitignore
             echo "phpunit.xml.dist" > .gitignore
             echo "spark" > .gitignore
+            # echo "spark" > .gitignore
             # echo "!vendor/*" > .git-ftp-include
             # sed -i '/vendor/d' .gitignore
             # echo "!vendor/*" > .git-ftp-include
