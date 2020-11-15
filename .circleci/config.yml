@@ -52,8 +52,8 @@ jobs:
             echo "init-git-ftp" >> .gitignore
 
             echo ".circleci/**" >> .gitignore
-            echo "app/**" >> .gitignore
-            echo "system/**" >> .gitignore
+            # echo "app/**" >> .gitignore
+            # echo "system/**" >> .gitignore
             # echo "writeable/**" >> .gitignore
             echo "vendor/**" >> .gitignore
 
