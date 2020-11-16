@@ -20,7 +20,6 @@
         "laminas/laminas-escaper": "^2.6.1",
         "guzzlehttp/guzzle": "^7.2.0",
         "monken/cli-create": "^0.3.1",
-        "tatter/alerts": "2.0.4",
         "casbin/codeigniter-permission": "1.0.0"
     },
     "require-dev": {

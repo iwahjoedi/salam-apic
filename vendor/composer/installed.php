@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '2833f30b3f87980c50765e788410caba0c1cec72',
+    'reference' => '43a64061886e7ce57d46ac57a4d687e3215d529b',
     'name' => 'iwahjoedi/salam-apic',
   ),
   'versions' => 
@@ -286,7 +286,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '2833f30b3f87980c50765e788410caba0c1cec72',
+      'reference' => '43a64061886e7ce57d46ac57a4d687e3215d529b',
     ),
     'kint-php/kint' => 
     array (
@@ -751,15 +751,6 @@
         0 => '9999999-dev',
       ),
       'reference' => 'fbc3507f23d263d75417e09a12d77c009f39676c',
-    ),
-    'tatter/alerts' => 
-    array (
-      'pretty_version' => 'v2.0.4',
-      'version' => '2.0.4.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '08637a10e91dbc2fd3386fc75dbaf4c41648ddcd',
     ),
     'theseer/tokenizer' => 
     array (

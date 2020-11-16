@@ -6,6 +6,71 @@ spark
 .env.dev
 .gitlab-ci.yaml
 composer.lock
+<<<<<<< HEAD
+docker-compose.yml
+env.prod
+README.md
+init-git-ftp
+license.txt
+.circleci/**
+=======
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Modules Testing
+_modules/*
+
+# phpenv local config
+.php-version
+
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
+
+# Netbeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+/api/
+
+# Visual Studio Code
+.vscode/
+
+/results/
+/phpunit*.xml
+
+
+# Codeigniter
+#vendor/
+#composer.lock
+#.git-ftp.log
+#system/ThirdParty/
+
+# Build
+docker-compose.yml
+phpunit.xml.dist
+spark
+.git/**
+.editorconfig
+.env.dev
+.gitlab-ci.yaml
+composer.json
+composer.lock
 docker-compose.yml
 env.prod
 README.md

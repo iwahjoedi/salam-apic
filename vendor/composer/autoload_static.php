@@ -9,8 +9,8 @@ class ComposerStaticInitcb7bff7fd0e394bde1837c596c576f4d
     public static $files = array (
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
-        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
@@ -31,10 +31,6 @@ class ComposerStaticInitcb7bff7fd0e394bde1837c596c576f4d
         array (
             'Wensleydale\\' => 12,
             'Webmozart\\Assert\\' => 17,
-        ),
-        'T' => 
-        array (
-            'Tatter\\Alerts\\' => 14,
         ),
         'S' => 
         array (
@@ -107,10 +103,6 @@ class ComposerStaticInitcb7bff7fd0e394bde1837c596c576f4d
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
-        ),
-        'Tatter\\Alerts\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/tatter/alerts/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38d039ff889d590169b1559b94cac12f",
+    "content-hash": "f03a53890402e71ad1f1fbd40db1c7d3",
     "packages": [
         {
             "name": "casbin/casbin",
@@ -1543,59 +1543,6 @@
                 }
             ],
             "time": "2020-10-28T21:31:18+00:00"
-        },
-        {
-            "name": "tatter/alerts",
-            "version": "v2.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tattersoftware/codeigniter4-alerts.git",
-                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-alerts/zipball/08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
-                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "codeigniter4/framework": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tatter\\Alerts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthew Gatner",
-                    "email": "mgatner@tattersoftware.com",
-                    "homepage": "https://tattersoftware.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lightweight user alerts for CodeIgniter 4",
-            "homepage": "https://github.com/tattersoftware/codeigniter4-alerts",
-            "keywords": [
-                "alerts",
-                "codeigniter",
-                "codeigniter4",
-                "dialogs",
-                "messages"
-            ],
-            "support": {
-                "issues": "https://github.com/tattersoftware/codeigniter4-alerts/issues",
-                "source": "https://github.com/tattersoftware/codeigniter4-alerts/tree/develop"
-            },
-            "time": "2020-06-03T19:07:43+00:00"
         }
     ],
     "packages-dev": [

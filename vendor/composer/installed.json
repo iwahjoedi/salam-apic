@@ -3531,62 +3531,6 @@
             "install-path": "../symfony/var-exporter"
         },
         {
-            "name": "tatter/alerts",
-            "version": "v2.0.4",
-            "version_normalized": "2.0.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tattersoftware/codeigniter4-alerts.git",
-                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tattersoftware/codeigniter4-alerts/zipball/08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
-                "reference": "08637a10e91dbc2fd3386fc75dbaf4c41648ddcd",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "codeigniter4/framework": "dev-master"
-            },
-            "time": "2020-06-03T19:07:43+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Tatter\\Alerts\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthew Gatner",
-                    "email": "mgatner@tattersoftware.com",
-                    "homepage": "https://tattersoftware.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lightweight user alerts for CodeIgniter 4",
-            "homepage": "https://github.com/tattersoftware/codeigniter4-alerts",
-            "keywords": [
-                "alerts",
-                "codeigniter",
-                "codeigniter4",
-                "dialogs",
-                "messages"
-            ],
-            "support": {
-                "issues": "https://github.com/tattersoftware/codeigniter4-alerts/issues",
-                "source": "https://github.com/tattersoftware/codeigniter4-alerts/tree/develop"
-            },
-            "install-path": "../tatter/alerts"
-        },
-        {
             "name": "theseer/tokenizer",
             "version": "1.2.0",
             "version_normalized": "1.2.0.0",

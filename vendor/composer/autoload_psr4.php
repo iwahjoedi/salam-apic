@@ -10,7 +10,6 @@ return array(
     'monken\\' => array($vendorDir . '/monken/cli-create/src'),
     'Wensleydale\\' => array($vendorDir . '/wensleydale/spark/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
-    'Tatter\\Alerts\\' => array($vendorDir . '/tatter/alerts/src'),
     'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Contracts\\Service\\' => array($vendorDir . '/symfony/service-contracts'),
