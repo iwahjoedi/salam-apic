@@ -5,7 +5,6 @@ spark
 .editorconfig
 .env.dev
 .gitlab-ci.yaml
-composer.json
 composer.lock
 docker-compose.yml
 env.prod
