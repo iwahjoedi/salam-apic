@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Deploy Master Branch
+          name: Deploy Build Branch
           no_output_timeout: 30m
           command: |
             sudo apt-get update
@@ -87,8 +87,8 @@ jobs:
             # echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
             # echo -e "Ini after build sha1: $(git rev-parse HEAD)"
 
-            echo -e "Checkout to current build"
-            git rev-parse HEAD | xargs git checkout
+            # echo -e "Checkout to current build"
+            # git rev-parse HEAD | xargs git checkout
 
 
             echo -e "Push all files those checkout to ftp-server"

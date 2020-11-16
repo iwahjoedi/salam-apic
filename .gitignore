@@ -131,3 +131,19 @@ vendor/
 composer.lock
 #.git-ftp.log
 # system/ThirdParty/
+
+# Build
+# docker-compose.yml
+# phpunit.xml.dist
+# spark
+# .git/**
+# .editorconfig
+# .env.dev
+# .gitlab-ci.yaml
+# composer.lock
+# docker-compose.yml
+# env.prod
+# README.md
+# init-git-ftp
+# license.txt
+# .circleci/**
