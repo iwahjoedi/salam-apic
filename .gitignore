@@ -127,9 +127,6 @@ nb-configuration.xml
 
 
 # Codeigniter
-vendor/
-# build/ #netbean too
-composer.lock
 #.git-ftp.log
 # system/ThirdParty/
 
