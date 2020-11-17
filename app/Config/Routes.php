@@ -30,9 +30,39 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
 // $routes->get('/', 'Home::index');
-// $routes->get('/', 'Home::index');
+// $routes->get('/users', 'Users::index');
+
+/**
+ * Users
+ **/
+$routes->get('users', 'Users::index');
+$routes->get('users/new', 'Users::new');
+$routes->post('users', 'Users::create');
+$routes->get('users/(:id)', 'Users::show/$1');
+$routes->put('users/(:id)', 'Users::update/$1');
+$routes->post('users/(:id)', 'Users::update/$1');
+$routes->get('users/(:id)/edit', 'Users::edit/$1');
+$routes->delete('users/(:id)', 'Users::delete/$1');
+
+/**
+ * Menus
+ **/
+$routes->resource('menus');
+
+
+
+
+/**
+ * CLI Route
+ */
+
+$routes->cli('migrate', 'App\Database::migrate');
+
+/**
+ * Rest CLI Command Route
+ */
+// $routes->put('migrate/menu', 'Migration::goMenu');
 
 /**
  * --------------------------------------------------------------------
