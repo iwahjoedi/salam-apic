@@ -11,7 +11,7 @@
 		stopOnSkipped="false">
 	<testsuites>
 		<testsuite name="app">
-			<directory>./tests</directory>
+			<directory>./Tests</directory>
 		</testsuite>
 	</testsuites>
 
@@ -36,7 +36,7 @@
 	</logging>
 
 	<php>
-		<server name="app.baseURL" value="http://example.com"/>
+		<server name="app.baseURL" value="http://localhost"/>
 
 		<!-- Directory containing phpunit.xml -->
 		<const name="HOMEPATH" value="./"/>
