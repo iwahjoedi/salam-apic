@@ -57,10 +57,10 @@ jobs:
             # echo "vendor/**" >> .gitignore
             
             # Git commit for adding .gitignore
-            # git add --all && git commit -m 'add .gitignore' --quiet
+            git add --all && git commit -m 'add .gitignore' --quiet
 
             # Touch ftp before anything
-            # git rev-parse HEAD | xargs git checkout
+            git rev-parse HEAD | xargs git checkout
             # git ftp catchup -vv
 
             # git checkout master
@@ -107,8 +107,8 @@ jobs:
             # git ftp catchup -vv
 
             # echo -e "[IW] back to default checkout and then catchup..."
-            # git checkout ${CIRCLE_SHA1}
-            # git ftp catchup -v
+            git checkout ${CIRCLE_SHA1}
+            git ftp catchup -v
  
 workflows:
   version: 2
