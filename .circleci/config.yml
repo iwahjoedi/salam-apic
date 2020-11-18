@@ -1,0 +1,120 @@
+version: 2
+jobs:
+  deploy:
+    docker:
+      - image: circleci/php:buster
+ 
+    working_directory: ~/repo
+ 
+    steps:
+      - checkout
+      - run: 
+          name: Deploy Build Branch
+          no_output_timeout: 30m
+          command: |
+            sudo apt-get update
+            sudo apt-get -qq install apt-utils git-ftp
+
+            # Update Environment
+            rm -rf .env
+            echo -e "\n\n" >> .env
+            echo -e "CI_ENVIRONMENT = production" >> .env
+            echo -e "app.baseURL = '${CI_BASEURL}'" >> .env
+            echo -e "database.default.hostname = localhost" >> .env
+            echo -e "database.default.database = ${CI_DB_NAME}" >> .env
+            echo -e "database.default.username = ${CI_DB_USER}" >> .env
+            echo -e "database.default.password = ${CI_DB_PASS}" >> .env
+            echo -e "database.default.DBDRIVER = MySQLi" >> .env
+
+            git config user.name "${CIRCLE_USERNAME}"
+            git config user.email "${GITHUB_EMAIL}"
+            git config git-ftp.user "${FTP_USER}"
+            git config git-ftp.password "${FTP_PASS}"
+            git config git-ftp.url "${FTP_LOCATION}"
+            git config git-ftp.syncroot ./
+
+            # rm -rf .gitignore
+            # Add your git-ftp exclude files here
+            # echo "docker-compose.yml" >> .gitignore
+            # echo "phpunit.xml.dist" >> .gitignore
+            # echo "spark" >> .gitignore
+            # echo ".git/**" >> .gitignore
+            # echo ".editorconfig" >> .gitignore
+            # echo ".env.dev" >> .gitignore
+            # echo ".gitlab-ci.yaml" >> .gitignore
+            # echo "composer.json" >> .gitignore
+            # echo "composer.lock" >> .gitignore
+            # echo "docker-compose.yml" >> .gitignore
+            # echo "env.prod" >> .gitignore
+            # echo "README.md" >> .gitignore
+            # echo "init-git-ftp" >> .gitignore
+            # echo "license.txt" >> .gitignore
+
+            # echo ".circleci/**" >> .gitignore
+            # echo "app/**" >> .gitignore
+            # echo "system/**" >> .gitignore
+            # echo "writeable/**" >> .gitignore
+            # echo "vendor/**" >> .gitignore
+            
+            # Git commit for adding .gitignore
+            git add --all && git commit -m 'add .gitignore' --quiet
+
+            # Touch ftp before anything
+            git rev-parse HEAD | xargs git checkout
+            # git ftp catchup -vv
+
+            # git checkout master
+
+            # Build the application
+            # composer update --verbose --prefer-dist --no-progress --no-interaction --no-dev --optimize-autoloader
+            # composer install --prefer-dist --verbose --no-progress --dev --optimize-autoloader
+            # composer update
+
+            # Deploy the application
+            echo "Deploying project ..."
+            #lftp -e "set ftp:list-options -a; set ssl:verify-certificate no; open $FTP_LOCATION; user $FTP_USER $FTP_PWD; mirror -X .* -X .*/ --reverse --verbose --only-newer --delete --parallel=4 . .; bye"
+
+            # echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
+            # echo -e "Ini sebelum build sha1: $(git rev-parse HEAD)"
+
+            # echo -e  "[IW] $(git status)"
+
+            # git add --all && git commit -m 'build by circleci' #--quiet
+
+            # echo -e "Ini build sha1: $(git rev-parse HEAD)"
+            # echo -e "Ini -1 sebelum build sha1: $(git rev-parse HEAD^)"
+
+            # echo -e "Ini CIRCLE_SHA1: ${CIRCLE_SHA1}"
+            # echo -e "Ini after build sha1: $(git rev-parse HEAD)"
+
+            # echo -e "Checkout to current build"
+            # git rev-parse HEAD | xargs git checkout
+
+
+            echo -e "Push all files those checkout to ftp-server"
+            git ftp push -v --changed-only
+
+            # yes Y | git ftp push -vv --changed-only # Must push using clean sha1 on remote
+
+            # git rev-parse HEAD^ | xargs git ftp push --commit
+            # git ftp push -v --changed-only --all
+            # git ftp push -vv --all
+
+            # echo $(git status)
+            # git ftp catchup --init-if-not-exist --user "${FTP_USER}" --passwd "${FTP_PWD}" ${FTP_LOCATION}
+
+            # echo -e "catchup sha1 of remote"
+            # git ftp catchup -vv
+
+            # echo -e "[IW] back to default checkout and then catchup..."
+            git checkout ${CIRCLE_SHA1}
+            git ftp catchup -v
+ 
+workflows:
+  version: 2
+  just-deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: build
