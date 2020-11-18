@@ -45,22 +45,22 @@ nb-configuration.xml
 #system/ThirdParty/
 
 # Build
-docker-compose.yml
-phpunit.xml.dist
-spark
-.git/**
-.editorconfig
-.env.dev
-.gitlab-ci.yaml
-composer.json
-composer.lock
-docker-compose.yml
-env.prod
-README.md
-init-git-ftp
-license.txt
-.circleci/**
-tests/**
-docs/**
-writable/**
+/docker-compose.yml
+/phpunit.xml.dist
+/spark
+/.git/**
+/.editorconfig
+/.env.dev
+/.gitlab-ci.yaml
+/vendor/**/.git
+/composer.lock
+/docker-compose.yml
+/env.prod
+/README.md
+/init-git-ftp
+/license.txt
+/.circleci/**
+/tests/**
+/docs/**
+/writable/**
 
