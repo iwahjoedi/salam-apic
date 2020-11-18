@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '9d0c61225e006d2c549b47ccd3a7561fd1f57f43',
+    'reference' => '248bd094ea9cc90d2971632a4bf711ef72f3d11c',
     'name' => 'iwahjoedi/salam-apic',
   ),
   'versions' => 
@@ -286,7 +286,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '9d0c61225e006d2c549b47ccd3a7561fd1f57f43',
+      'reference' => '248bd094ea9cc90d2971632a4bf711ef72f3d11c',
     ),
     'kint-php/kint' => 
     array (
@@ -299,13 +299,13 @@
     ),
     'laminas/laminas-escaper' => 
     array (
-      'pretty_version' => '2.7.x-dev',
-      'version' => '2.7.9999999.9999999-dev',
+      'pretty_version' => '2.8.x-dev',
+      'version' => '2.8.9999999.9999999-dev',
       'aliases' => 
       array (
         0 => '9999999-dev',
       ),
-      'reference' => '4f40bf7735efde17e0791fdfabe84e1693ee8b70',
+      'reference' => 'd827899f8760ee9b746e8f9105e3056e9f6280ff',
     ),
     'laminas/laminas-zendframework-bridge' => 
     array (
@@ -664,7 +664,7 @@
       array (
         0 => '3.x-dev',
       ),
-      'reference' => '8421eeb737248e000a94b124f7cc2ef61e7fb3f9',
+      'reference' => '6f2a22d75eed4b5c1ada6926bee05e8d198df172',
     ),
     'symfony/cache' => 
     array (
