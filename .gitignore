@@ -52,6 +52,7 @@ spark
 .editorconfig
 .env.dev
 .gitlab-ci.yaml
+vendor/**/.git
 composer.json
 composer.lock
 docker-compose.yml
